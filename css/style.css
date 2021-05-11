@@ -1,0 +1,198 @@
+body {
+   font-family: "Roboto";
+   font-size: 14px;
+   font-weight: 400;
+   color: #212121;
+   width: 1600px;
+   height: 2349px;
+   background: white
+}
+
+
+/* шапка сайта */
+.header-part {
+   display: flex;
+   height: 80px;
+   border: 1px solid #ececec;
+}
+/* логотип сайта */
+.logo-part {
+   width: 145px;
+   height: 31px;
+   text-align: center;
+   margin: 24px 0 25px 215px;
+}
+/* голубая часть логотипа сайта */
+.blue-logo-part {
+   color: #2196f3;
+}
+/* стилизация логотипа сайта */
+.logo-link {
+   text-decoration: none;
+   color: #000;
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 1.85em;
+   letter-spacing: 0.03em;
+}
+/* навигация сайта */
+nav {
+   display: flex;
+}
+.navigation-block {
+   width: 294px;
+   margin: 32px 0 32px 93px;
+}
+.contacts-block {
+   width: 307px;
+   margin: 32px 0 32px 331px;
+}
+/* список навигации и список контактов*/
+.navigation-list,
+.contacts-list {
+   display: flex;
+   justify-content: space-between;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+/* стилизации ссылок навигации и контактов*/
+.navigation-link {
+   color: #212121;
+   text-decoration: none;
+   letter-spacing: 0.02em;
+}
+.contact-link {
+   color: #757575;
+   text-decoration: none;
+   letter-spacing: 0.02em;
+}
+.navigation-link:hover,
+.contact-link:hover {
+   color: #2196f3;
+}
+
+/* оформление страницы studio */
+/* Hero сайта */
+.hero {
+   background: #2f303a;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+}
+.hero-header {
+   color: #fff;
+   font-size: 3.14em;
+   width: 696px;
+   height: 120px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+   margin: 200px 452px 0 452px;
+}
+.hero-button {
+   color: #fff;
+   font-size: 1.14em;
+   width: 200px;
+   height: 50px;
+   margin: 30px 700px 0 700px;
+   background: #2196f3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: 0;
+}
+.hero-button:hover {
+   cursor: pointer;
+}
+/* Секция "особености работы" */
+.features-part {
+   display: flex;
+   width: 1170.28px;
+   height: 101.39px;
+   margin: 94px 215px 0 215px;
+}
+/*  скрытый заголовок */
+.hidden-header {
+   display: none;
+}
+.features-part-list {
+   width: 100%;
+   height: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+  
+
+ }
+ .features-part-list-item {
+   width: 270px;
+   height: 101px;
+ }
+.features-part-list-header {
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 1.14em;
+   letter-spacing: 0.03em;
+}
+.features-part-list-text {
+   margin: 10px 0;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* секция Чем мы занимаемся */
+.business-part {
+   width: 1170px;
+   height: 386px;
+   margin: 94px 215px 0 215px;
+   
+}
+.business-part-header {
+   font-weight: bold;
+  font-size: 2.57em;
+  text-align: center;
+  letter-spacing: 0.03em; 
+
+}
+.business-part-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.business-part-item {
+   width: 370px;
+   height: 294px;
+   padding-right: 32px ;
+}
+/* секция Наша команда */
+.our-team {
+   width: 1600px;
+   height: 650.39px;
+   margin-top: 95px;
+  background: #F5F4FA;
+  
+}
+.our-team-header {
+   font-weight: bold;
+   font-size: 2.25em;
+   text-align: center;
+   letter-spacing: 0.03em;
+   padding: 95px 0 0 100px;
+}
+.our-team-list {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   margin: 50px 215px 0 215px;
+   width: 1170px;
+   height: 368px;
+  
+}
+.our-team-list-item {
+  width: 270px;
+  height: 368px;
+  background-color: #fff;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
