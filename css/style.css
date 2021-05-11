@@ -7,6 +7,12 @@ body {
    height: 2349px;
    background: white
 }
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+} 
 
 
 /* шапка сайта */
@@ -20,7 +26,7 @@ body {
    width: 145px;
   height: 31px;
   text-align: center;
-  padding: 24px 0 25px 215px;
+  padding: 24px 0 25px 25px;
 }
 /* голубая часть логотипа сайта */
 .blue-logo-part {
@@ -45,7 +51,7 @@ nav {
 }
 .contacts-block {
    width: 307px;
-   margin: 32px 0 32px 331px;
+   margin: 32px 0 32px 320px;
 }
 /* список навигации и список контактов*/
 .navigation-list,
@@ -74,7 +80,7 @@ nav {
 
 /* оформление страницы studio */
 /* Hero сайта */
-.hero {
+.hero-part {
    background: #2f303a;
    height: 600px;
    display: flex;
@@ -88,16 +94,15 @@ nav {
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 0.06em;
-   margin: 200px 452px 0 452px;
+   margin: 200px 452px 0 252px;
 }
 .hero-button {
    color: #fff;
    font-size: 1.14em;
    width: 200px;
    height: 50px;
-   margin: 30px 700px 0 700px;
+   margin: 30px 700px 0 500px;
    background: #2196f3;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    border: 0;
 }
@@ -169,11 +174,10 @@ nav {
 .our-team {
    width: 1600px;
    height: 650.39px;
-   margin-top: 95px;
-  background: #F5F4FA;
-  
+   margin-top: 94px;
+   background-color:#F5F4FA ;
 }
-.our-team-header {
+  .our-team-header {
    font-weight: bold;
    font-size: 2.25em;
    text-align: center;
@@ -184,7 +188,7 @@ nav {
    list-style-type: none;
    display: flex;
    justify-content: space-between;
-   margin: 50px 0 0 215px;
+   margin: 50px 0 0 15px;
    width: 1170px;
    height: 368px;
   
@@ -222,7 +226,7 @@ nav {
    width: 145px;
    height: 31px;
    text-align: center;
-   padding: 58px 0 0 245px;
+   padding: 58px 0 0 50px;
 }
 .logo-link-footer {
    text-decoration: none;
@@ -237,7 +241,7 @@ nav {
    width: 231px;
    height: 81px;
    padding: 0;
-   margin: 20px 0 0 245px;
+   margin: 20px 0 0 50px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
