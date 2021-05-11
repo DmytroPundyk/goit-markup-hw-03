@@ -18,9 +18,9 @@ body {
 /* логотип сайта */
 .logo-part {
    width: 145px;
-   height: 31px;
-   text-align: center;
-   margin: 24px 0 25px 215px;
+  height: 31px;
+  text-align: center;
+  padding: 24px 0 25px 215px;
 }
 /* голубая часть логотипа сайта */
 .blue-logo-part {
@@ -63,8 +63,8 @@ nav {
    letter-spacing: 0.02em;
 }
 .contact-link {
-   color: #757575;
    text-decoration: none;
+   color: #757575;
    letter-spacing: 0.02em;
 }
 .navigation-link:hover,
@@ -184,7 +184,7 @@ nav {
    list-style-type: none;
    display: flex;
    justify-content: space-between;
-   margin: 50px 215px 0 215px;
+   margin: 50px 0 0 215px;
    width: 1170px;
    height: 368px;
   
@@ -196,3 +196,62 @@ nav {
   border-radius: 0px 0px 3px 3px;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
+.our-team-list-item-header {
+   font-weight: 500;
+  font-size: 1.14em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+  margin: auto;
+}
+.our-team-list-item-trade {
+   font-size: 1.14em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-top: 10px;
+  margin: auto;
+}
+/* секция подвал сайта */
+.footer-part {
+   height: 252px;
+   width: 1600px;
+   background-color: #2F303A;
+}
+.logo-part-footer {
+   width: 145px;
+   height: 31px;
+   text-align: center;
+   padding: 58px 0 0 245px;
+}
+.logo-link-footer {
+   text-decoration: none;
+   color:white;
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 1.85em;
+   letter-spacing: 0.03em;  
+}
+.address-list {
+   list-style-type: none;
+   width: 231px;
+   height: 81px;
+   padding: 0;
+   margin: 20px 0 0 245px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.address-list-item {
+   font-style: normal;
+   color: #FFFFFF;
+}
+ .address-list-item-link {
+   color: rgba(255, 255, 255, 0.6);
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 0.03em; 
+ }
+ .address-list-item-link:hover {
+   color: #2196f3;
+ }
