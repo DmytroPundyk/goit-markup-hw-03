@@ -7,10 +7,16 @@ body {
    height: 2349px;
    background: white
 }
-.container {
+* {
+   box-sizing: content-box;
    width: 100%;
-   max-width: 1200px;
+  max-width: 1200px;
    margin: 0 auto;
+   padding:0 auto;
+}
+.container {
+  
+
 } 
 
 /* шапка сайта */
@@ -24,7 +30,7 @@ body {
    width: 145px;
   height: 31px;
   text-align: center;
-  padding: 24px 0 25px 25px;
+  padding: 24px 0 25px 50px;
 }
 /* голубая часть логотипа сайта */
 .blue-logo-part {
@@ -45,19 +51,18 @@ nav {
 }
 .navigation-block {
    width: 294px;
-   margin: 32px 0 32px 93px;
+   margin: 32px 0 32px 53px;
 }
 .contacts-block {
    width: 307px;
-   margin: 32px 0 32px 320px;
+   margin: 32px 0 32px -400px;
+   
 }
 /* список навигации и список контактов*/
 .navigation-list,
 .contacts-list {
    display: flex;
    justify-content: space-between;
-   padding: 0;
-   margin: 0;
    list-style: none;
 }
 /* стилизации ссылок навигации и контактов*/
@@ -112,7 +117,6 @@ nav {
    display: flex;
    width: 1170.28px;
    height: 101.39px;
-   margin: 94px 215px 0 215px;
 }
 /*  скрытый заголовок */
 .hidden-header {
@@ -147,7 +151,7 @@ nav {
 .business-part {
    width: 1170px;
    height: 386px;
-   margin: 94px 215px 0 215px;
+  
    
 }
 .business-part-header {
@@ -223,8 +227,10 @@ nav {
 .logo-part-footer {
    width: 145px;
    height: 31px;
-   text-align: center;
-   padding: 58px 0 0 50px;
+   margin: auto;
+
+  
+
 }
 .logo-link-footer {
    text-decoration: none;
@@ -232,14 +238,14 @@ nav {
    font-family: "Raleway";
    font-weight: 700;
    font-size: 1.85em;
-   letter-spacing: 0.03em;  
+   letter-spacing: 0.03em; 
 }
 .address-list {
    list-style-type: none;
    width: 231px;
    height: 81px;
    padding: 0;
-   margin: 40px 0 0 50px;
+   margin: 40px 0 0 40px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -262,7 +268,6 @@ nav {
  .portfolio-content {
  width: 1170px;
  height: 1360px;
- margin: 94px 215px 94px 215px;
  display: flex;
  flex-direction: column;
  align-items: center;
