@@ -1,5 +1,5 @@
 body {
-   font-family: "Roboto";
+   font-family: "Roboto",sans-serif;
    font-size: 14px;
    font-weight: 400;
    color: #212121;
@@ -14,12 +14,11 @@ body {
    margin-right: auto;
 } 
 
-
 /* шапка сайта */
 .header-part {
    display: flex;
    height: 80px;
-   border: 1px solid #ececec;
+   border-bottom: 4px  solid #ececec;
 }
 /* логотип сайта */
 .logo-part {
@@ -241,7 +240,7 @@ nav {
    width: 231px;
    height: 81px;
    padding: 0;
-   margin: 20px 0 0 50px;
+   margin: 40px 0 0 50px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -258,4 +257,70 @@ nav {
  }
  .address-list-item-link:hover {
    color: #2196f3;
+ }
+ /* оформление страницы portfolio */
+ /* оформление header и footer обоих страниц одинаково  */
+ .portfolio-content {
+ width: 1170px;
+ height: 1360px;
+ margin: 94px 215px 94px 215px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+ .filter-list {
+   margin: 0;
+   padding: 0;
+   width: 613px;
+   height: 54px;
+   display: flex;
+   list-style-type: none;
+    
+ }
+ .filter-list input {
+   margin: 0 8px;
+   padding: 6px 22px;
+   background-color: #f5f4fa;
+   font-size: 1.14em;
+   letter-spacing: 0.03em;
+   line-height: 1.625em;
+   border: 0;
+   border-radius: 4px;
+ }
+ .filter-list input:hover {
+   background: #2196f3;
+   color: #fff;
+   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2); 
+ }
+ /* примеры страницы portfolio */
+ .pattern-list {
+   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  height: 1272px;
+  justify-content: space-between;
+  
+ }
+ .pattern-list li {
+  width: 370px;
+  height: 404px;
+ background-color: #fff;
+ border: 1px solid rgba(238, 238, 238, 1);
+ }
+
+ .pattern-list h3 {
+   width: 322px;
+   height: 36px;
+   margin: 20px 0 0 24px;
+   font-weight: bold;
+   font-size: 1.29em;
+ }
+ .pattern-list p {
+    margin: 4px 0 0 24px;
+    font-size: 1.14em;
+      line-height: 1.875em;
+      letter-spacing: 0.03em;
+      color: #757575;
  }
