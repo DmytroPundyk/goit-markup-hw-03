@@ -320,9 +320,9 @@ body {
  .filter-list input:hover {
    background: #2196f3;
    color: #fff;
-   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2); 
+   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3); 
  }
- /* примеры страницы portfolio */
+ /* примеры страницы Portfolio */
  .pattern-list {
    list-style-type: none;
   display: flex;
