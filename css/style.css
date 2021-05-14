@@ -8,20 +8,21 @@ body {
    background: white
 }
 * {
-   box-sizing: content-box;
-   width: 100%;
-  max-width: 1200px;
-   margin: 0 auto;
-   padding:0 auto;
+   box-sizing:border-box;
+   margin: 0;
+   padding: 0;
 }
 .container {
-  
-
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 auto;
+ display: flex;
+ 
 } 
 
 /* шапка сайта */
 .header-part {
-   display: flex;
    height: 80px;
    border-bottom: 4px  solid #ececec;
 }
@@ -30,7 +31,7 @@ body {
    width: 145px;
   height: 31px;
   text-align: center;
-  padding: 24px 0 25px 50px;
+  margin: 24px 0 25px 15px;
 }
 /* голубая часть логотипа сайта */
 .blue-logo-part {
@@ -46,68 +47,75 @@ body {
    letter-spacing: 0.03em;
 }
 /* навигация сайта */
-nav {
-   display: flex;
-}
+
 .navigation-block {
    width: 294px;
-   margin: 32px 0 32px 53px;
+   margin: 32px 0 32px 93px;
 }
 .contacts-block {
    width: 307px;
-   margin: 32px 0 32px -400px;
+   margin: 32px 0 32px 331px;
    
 }
 /* список навигации и список контактов*/
-.navigation-list,
-.contacts-list {
+.header-part ul{
    display: flex;
    justify-content: space-between;
    list-style: none;
 }
 /* стилизации ссылок навигации и контактов*/
-.navigation-link {
+.navigation-block a{
    color: #212121;
    text-decoration: none;
    letter-spacing: 0.02em;
 }
-.contact-link {
+.contacts-block a{
    text-decoration: none;
    color: #757575;
    letter-spacing: 0.02em;
 }
-.navigation-link:hover,
-.contact-link:hover {
+.navigation-block a:hover,
+.contacts-block a:hover{
    color: #2196f3;
-}
+} 
 
 /* оформление страницы studio */
 /* Hero сайта */
 .hero-part {
    background: #2f303a;
-   height: 600px;
+ } 
+.hero-part .container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 auto;
    display: flex;
    flex-direction: column;
+
 }
+
 .hero-header {
    color: #fff;
-   font-size: 3.14em;
+   font-size: 2.75em;
    width: 696px;
    height: 120px;
+   line-height: 60px;
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 0.06em;
-   margin: 200px 452px 0 252px;
+   margin: 200px 252px 0 252px; 
 }
+
 .hero-button {
    color: #fff;
    font-size: 1.14em;
    width: 200px;
    height: 50px;
-   margin: 30px 700px 0 500px;
    background: #2196f3;
    border-radius: 4px;
    border: 0;
+  margin: 30px 500px 200px 500px;
+ 
 }
 .hero-button:hover {
    cursor: pointer;
@@ -116,13 +124,14 @@ nav {
 .features-part {
    display: flex;
    width: 1170.28px;
-   height: 101.39px;
+   margin: 0 auto;
+   padding: 94px 0 0 0;
 }
 /*  скрытый заголовок */
 .hidden-header {
    display: none;
 }
-.features-part-list {
+.features-part ul{
    width: 100%;
    height: 100%;
    list-style: none;
@@ -131,17 +140,17 @@ nav {
   
 
  }
- .features-part-list-item {
+ .features-part li{
    width: 270px;
    height: 101px;
  }
-.features-part-list-header {
+.features-part h3{
    text-transform: uppercase;
    font-weight: 700;
    line-height: 1.14em;
    letter-spacing: 0.03em;
 }
-.features-part-list-text {
+.features-part p{
    margin: 10px 0;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -150,87 +159,103 @@ nav {
 /* секция Чем мы занимаемся */
 .business-part {
    width: 1170px;
-   height: 386px;
-  
-   
-}
-.business-part-header {
-   font-weight: bold;
-  font-size: 2.57em;
-  text-align: center;
-  letter-spacing: 0.03em; 
+   margin: 0 auto;
+   padding: 94px 0 94px 0;
+  }
+  .business-part .container {
+   width: 100%;
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+  }
 
+.business-part h2{
+  font-weight: bold;
+  font-size: 2.57em;
+  letter-spacing: 0.03em;
+   margin: 0 auto ; 
 }
-.business-part-list {
+.business-part ul{
   list-style-type: none;
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   margin-top: 50px;
+
 }
-.business-part-item {
+.business-part li {
    width: 370px;
    height: 294px;
-   padding-right: 32px ;
+   margin-right: 30px;
 }
 /* секция Наша команда */
 .our-team {
    width: 1600px;
-   height: 650.39px;
-   margin-top: 94px;
    background-color:#F5F4FA ;
+   padding: 94px 0 94px 0;
+   
 }
-  .our-team-header {
+  .our-team .container {
+   width: 100%;
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;  
+  }
+  .our-team h2{
    font-weight: bold;
    font-size: 2.25em;
    text-align: center;
    letter-spacing: 0.03em;
-   padding: 95px 0 0 100px;
+  
 }
-.our-team-list {
+.our-team ul {
    list-style-type: none;
    display: flex;
    justify-content: space-between;
-   margin: 50px 0 0 15px;
    width: 1170px;
    height: 368px;
+   margin: 50px 0 0 15px;
   
 }
-.our-team-list-item {
+.our-team li {
   width: 270px;
   height: 368px;
   background-color: #fff;
   border-radius: 0px 0px 3px 3px;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
-.our-team-list-item-header {
+.our-team h3 {
    font-weight: 500;
   font-size: 1.14em;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  margin: auto;
+  margin-top: 30px;
+  
 }
-.our-team-list-item-trade {
+.our-team p{
    font-size: 1.14em;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-top: 10px;
-  margin: auto;
-}
+  margin-top: 10px;
+ }
 /* секция подвал сайта */
 .footer-part {
    height: 252px;
    width: 1600px;
    background-color: #2F303A;
 }
+.footer-part .container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 auto;
+   display: flex;
+   flex-direction: column; 
+}
 .logo-part-footer {
    width: 145px;
    height: 31px;
-   margin: auto;
-
-  
-
+   margin: 60px 0 0 15px;
 }
 .logo-link-footer {
    text-decoration: none;
@@ -240,27 +265,27 @@ nav {
    font-size: 1.85em;
    letter-spacing: 0.03em; 
 }
-.address-list {
+.footer-part ul{
    list-style-type: none;
    width: 231px;
    height: 81px;
    padding: 0;
-   margin: 40px 0 0 40px;
+   margin: 20px 0 0 15px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
-.address-list-item {
+.footer-part li{
    font-style: normal;
    color: #FFFFFF;
 }
- .address-list-item-link {
+.footer-part ul a {
    color: rgba(255, 255, 255, 0.6);
    font-style: normal;
    text-decoration: none;
    letter-spacing: 0.03em; 
  }
- .address-list-item-link:hover {
+ .footer-part ul a:hover {
    color: #2196f3;
  }
  /* оформление страницы portfolio */
