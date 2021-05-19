@@ -34,17 +34,12 @@ body {
    border-bottom: 4px solid #ececec;
 }
 /* логотип сайта */
-.logo-part {
-   width: 145px;
-   height: 31px;
-   text-align: center;
-   margin: 24px 0 25px 15px;
-}
+
 /* голубая часть логотипа сайта */
 .blue-logo-part {
    color: var(--special-color);
    font-family: "Raleway";
-   line-height: 1.86em;
+   line-height: 1.173;
    font-size: 26px;
    letter-spacing: 0.03em;
 }
@@ -54,9 +49,10 @@ body {
    color: #000;
    font-family: "Raleway";
    font-weight: 700;
-   font-size: 1.65em;
-   line-height: 2.25em;
+   font-size: 26px;
+   line-height: 1.173;
    letter-spacing: 0.03em;
+   padding: 24px 0 0 15px;
 }
 /* навигация сайта */
 
@@ -79,7 +75,7 @@ body {
    font-family: "Roboto";
    font-weight: 500;
    font-size: 14px;
-   line-height: 1em;
+   line-height: 1;
    letter-spacing: 0.02em;
    color: var(--main-text-color);
    text-decoration: none;
@@ -89,7 +85,7 @@ body {
    font-family: "Roboto";
    font-weight: 500;
    font-size: 14px;
-   line-height: 1em;
+   line-height: 1;
    letter-spacing: 0.02em;
    color: var(--second-text-color);
 }
@@ -172,7 +168,7 @@ a.active {
    margin: 10px 0;
    line-height: 1.71em;
    letter-spacing: 0.03em;
-   color: #757575;
+   color: var(--second-text-color);
 }
 /* секция Чем мы занимаемся */
 .business-part {
@@ -233,7 +229,7 @@ a.active {
 .our-team li {
    width: 270px;
    height: 368px;
-   background-color: #fff;
+   background-color: var(--backgound-color);
    border-radius: 0px 0px 3px 3px;
    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
@@ -248,7 +244,7 @@ a.active {
    font-size: 1.14em;
    text-align: center;
    letter-spacing: 0.03em;
-   color: #757575;
+   color: var(--second-text-color);
    margin-top: 10px;
 }
 /* секция подвал сайта */
@@ -265,23 +261,18 @@ a.active {
    display: flex;
    flex-direction: column;
 }
-.logo-part-footer {
-   width: 145px;
-   height: 31px;
-   margin: 60px 0 0 15px;
-}
 .logo-link-footer {
    text-decoration: none;
    color: white;
    font-family: "Raleway";
    font-weight: 700;
-   font-size: 1.85em;
+   font-size: 26px;
+   line-height: 1.173;
    letter-spacing: 0.03em;
+   padding: 60px 0 0 15px;
 }
 .footer-part ul {
    list-style-type: none;
-   width: 231px;
-   height: 81px;
    padding: 0;
    margin: 20px 0 0 15px;
    display: flex;
@@ -289,34 +280,37 @@ a.active {
    justify-content: space-between;
 }
 .footer-part li {
+   font-size: 14px;
+   line-height: 1.714;
+   letter-spacing: 0.03em;
    font-style: normal;
    color: #ffffff;
+   margin-bottom: 6px;
 }
 .footer-part ul a {
    color: rgba(255, 255, 255, 0.6);
    font-style: normal;
-   text-decoration: none;
+   font-size: 14px;
+   line-height: 1.714;
    letter-spacing: 0.03em;
+   text-decoration: none;
 }
 .footer-part ul a:hover {
-   color: #2196f3;
+   color: var(--special-color);
 }
 /* оформление страницы portfolio */
 /* оформление header и footer обоих страниц одинаково  */
-.portfolio-content {
-   width: 1170px;
-}
 .portfolio-content .container {
    width: 100%;
    max-width: 1200px;
    margin: 0 auto;
-   padding: 0 auto;
    display: flex;
    flex-direction: column;
+   padding: 0 0 94px 0;
 }
 
 .filter-list {
-   margin: 65px 0 0 493px;
+   margin: 65px 0 0 293px;
    padding: 0;
    width: 613px;
    height: 54px;
@@ -327,37 +321,34 @@ a.active {
    margin: 0 8px 0 0;
    padding: 6px 22px;
    background-color: #f5f4fa;
-   font-size: 1.14em;
+   font-size: 16px;
+   font-weight: 500;
    letter-spacing: 0.03em;
-   line-height: 1.625em;
+   line-height: 1.625;
    border: 0;
    border-radius: 4px;
+   color: var(--main-text-color);
 }
 .filter-list .filter-list-blue {
    background-color: var(--special-color);
    color: #ffffff;
-   font-size: 16px;
-   font-weight: 500;
-   letter-spacing: 0.03em;
-   line-height: 1.625em;
-   border: 0;
-   border-radius: 4px;
 }
 .filter-list input:hover,
 .filter-list input:focus {
-   background: #2196f3;
+   background: var(--special-color);
    color: #fff;
    box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
    cursor: pointer;
 }
 /* примеры страницы Portfolio */
 .pattern-list {
-   margin: 34px 0 0 215px;
+   margin: 34px 0 0 15px;
    list-style-type: none;
    display: flex;
    width: 1170px;
    flex-wrap: wrap;
    justify-content: space-between;
+   font-size: 0;
 }
 .pattern-list a {
    text-decoration: none;
@@ -365,23 +356,28 @@ a.active {
 .pattern-list li {
    margin-bottom: 30px;
    width: 370px;
-   height: 404px;
-   background-color: #fff;
-   border: 1px solid rgba(238, 238, 238, 1);
+   height: 412px;
+   background-color: var(--backgound-color);
 }
 
 .pattern-list h3 {
-   width: 322px;
-   height: 30.64px;
-   margin: 20px 0 0 24px;
+   padding: 20.43px 0 0 24px;
    font-weight: bold;
-   font-size: 1.29em;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
    color: var(--main-text-color);
 }
 .pattern-list p {
-   margin: 4px 0 0 24px;
-   font-size: 1.14em;
-   line-height: 1.875em;
+   padding: 4px 0 20.43px 24px;
+   font-size: 16px;
+   line-height: 1.875;
    letter-spacing: 0.03em;
-   color: #757575;
+   color: var(--second-text-color);
+   border-bottom: 1px solid #eee;
+}
+.pattern-list h3,
+.pattern-list p {
+   border-left: 1px solid #eee;
+   border-right: 1px solid #eee;
 }
