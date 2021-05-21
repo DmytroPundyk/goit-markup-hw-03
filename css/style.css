@@ -149,13 +149,11 @@ a.active {
    width: 100%;
    list-style: none;
    display: inherit;
-   justify-content: space-between;
-   margin-left: 15px ;
+   justify-content: space-around;
 
 }
 .features-part li {
    width: 270px;
-   height: 101px;
 }
 .features-part h3 {
    text-transform: uppercase;
@@ -183,11 +181,8 @@ a.active {
 .business-part ul {
    list-style-type: none;
    display: flex;
-   justify-content: space-between;
-   margin: 50px 0 0 15px;
-}
-.business-part li {
-   margin-right: 30px;
+   justify-content: space-around;
+   margin-top:50px;
 }
 /* секция Наша команда */
 .our-team {
@@ -210,14 +205,13 @@ a.active {
 .our-team ul {
    list-style-type: none;
    display:flex;
-   justify-content: space-between;
-   margin:50px 0 0 15px;
+   justify-content: space-around;
+   margin-top:50px;
 }
 .our-team li {
    background-color: var(--main-color);
    border-radius: 0px 0px 3px 3px;
    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
-   margin-right: 30px;
 }
 .our-team h3 {
    font-weight: 500;
@@ -308,19 +302,18 @@ a.active {
 }
 /* примеры страницы Portfolio */
 .pattern-list {
-   margin: 34px 15px 0 15px;
+   margin-top: 34px;
    list-style-type: none;
    display:flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .pattern-list a {
    text-decoration: none;
 }
 .pattern-list li{
-   margin-bottom:30px;
    background-color: var(--main-color);
-   
+   margin-bottom:30px
 }
 .pattern-list h3 {
    padding: 20.43px 0 0 24px;
