@@ -25,6 +25,7 @@ body {
 .container {
    width: 1200px;
    margin: 0 auto;
+   padding: 0 15px;
    display: flex;
 }
 .hero-part .container,
@@ -32,16 +33,13 @@ body {
 .our-team .container,
 .footer-part .container ,
 .portfolio-content .container {
-   width: 1200px;
-   margin: 0 auto;
-   display:flex;
    justify-content: space-between;
    flex-direction: column; 
 }
 /* шапка сайта */
 .header-part {
    height: 80px;
-   border-bottom: 4px solid #ececec;
+   border-bottom: 1px solid #ececec;
 }
 /* логотип сайта */
 
@@ -60,24 +58,26 @@ body {
    font-size: 26px;
    line-height: 1.192;
    letter-spacing: inherit;
-   padding: 24px 0 0 15px;
+   padding-top: 24px;
 }
 /* навигация сайта */
 
 .navigation-list {
    width: 294px;
    margin-left:93px;
-   padding: 32px 0 32px 0;
+   padding: 32px 0;
 }
 .navigation-list li{
    margin-right: 50px;
 }
 .contacts-list {
    margin-left:331px;
-   padding: 32px 0 32px 0;
 }
 .contacts-list li:last-child {
    margin-left: 50px;
+}
+.contacts-list .link {
+   padding: 32px 0;
 }
 /* список навигации и список контактов*/
 .header-part ul {
@@ -93,13 +93,14 @@ body {
    color: var(--main-text-color);
    text-decoration: none;
 }
-.contacts-list a {
+.contacts-list a{
    text-decoration: none;
    font-weight: 500;
    font-size: inherit;
    line-height: inherit;
    letter-spacing: 0.02em;
    color: var(--second-text-color);
+ 
 }
 .navigation-list a:hover,
 .contacts-list a:hover,
@@ -114,7 +115,6 @@ a.active {
 .hero-part {
    background: var(--bg-hero-footer);
    padding:200px 0 200px 0;
-   
 }
 
 .hero-header {
@@ -127,7 +127,11 @@ a.active {
    letter-spacing: 0.06em;
  
 }
-
+.button-position{
+   display: block;
+   align-self:center;
+   margin-top:30px;
+}
 .hero-button {
    width: 200px;
    font-family: inherit;
@@ -139,7 +143,6 @@ a.active {
    background:var(--special-color);
    border-radius: 4px;
    border: 0;
-   margin: 30px auto;
    padding:10px 32px;
 }
 .hero-button:hover {
@@ -189,7 +192,7 @@ a.active {
 .business-part ul {
    list-style-type: none;
    display: flex;
-   margin:50px 0 0 15px;
+   margin-top:50px;
 }
 .business-part li {
    margin-right: 30px;
@@ -218,7 +221,7 @@ a.active {
 .our-team ul {
    list-style-type: none;
    display: flex;
-   margin:50px 0 0 15px;
+   margin-top:50px;
 }
 .our-team li {
    background-color: var(--main-color);
@@ -230,7 +233,7 @@ a.active {
    margin-right: 0;
 }
 .card-description {
-   padding:30px 60px ;
+   padding:30px;
 }
 .our-team h3 {
    font-weight: 500;
@@ -251,7 +254,7 @@ a.active {
 /* секция подвал сайта */
 .footer-part {
    background-color:var(--bg-hero-footer);
-   padding: 60px 0 60px 15px;
+   padding: 60px 0;
 }
 .logo-link-footer {
    text-decoration: none;
@@ -290,17 +293,18 @@ margin-bottom: 0;
 /* оформление страницы portfolio */
 /* оформление header и footer обоих страниц одинаково  */
 .portfolio-content {
- padding: 0 0 94px 0;
+ padding: 94px 0;
 }
 
 .filter-list {
-   margin: 65px 0 0 293px;
-   padding: 0;
+   margin-left:280px;
    display:flex;
    list-style-type: none;
 }
-.filter-list input {
-   margin: 0 8px 0 0;
+.filter-list li {
+    margin-right:8px;
+}
+.filter-list button {
    padding: 6px 22px;
    background-color: var(--bg-team-filter);
    font-size: 16px;
@@ -309,14 +313,14 @@ margin-bottom: 0;
    line-height: 1.625;
    border: 0;
    border-radius: 4px;
-   color: var(--main-text-color);
+   color:var(--main-text-color);
 }
 .filter-list .filter-list-blue {
    background-color: var(--special-color);
    color: var(--main-color);
 }
-.filter-list input:hover,
-.filter-list input:focus {
+.filter-list button:hover,
+.filter-list button:focus {
    background: var(--special-color);
    color:var(--main-color);
    box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
@@ -324,7 +328,7 @@ margin-bottom: 0;
 }
 /* примеры страницы Portfolio */
 .pattern-list {
-   margin: 34px 0 0 15px;
+   margin-top: 34px;
    list-style-type: none;
    display:flex;
    flex-wrap: wrap;
