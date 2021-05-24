@@ -17,11 +17,7 @@ body {
    color: var(--main-text-color);
    background: var(--main-color);
 }
-* {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-}
+
 /* контейнеры всех секций */
 .container {
    width: 1200px;
@@ -36,6 +32,12 @@ body {
 .portfolio-content .container {
    flex-direction: column; 
 }
+  /* убирает зазор делая картинки элементом:block
+    для our team и pattern list */
+    img {
+      display: block;
+      max-width: 100%;
+      }
 /* шапка сайта */
 .header-part {
    height: 80px;
@@ -82,7 +84,6 @@ body {
 /* список навигации и список контактов*/
 .header-part ul {
    display: flex;
-   list-style: none;
 }
 /* стилизации ссылок навигации и контактов*/
 .navigation-list a {
@@ -125,15 +126,12 @@ a.active {
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 0.06em;
- 
+   margin-bottom:var(--basic-card-gap);
 }
-.button-position{
-   display:flex;
-  justify-content: center;
-  margin-top:var(--basic-card-gap);
- 
-}
+
 .hero-button {
+   display:block;
+   margin: 0 auto;
    width: 200px;
    font-family: inherit;
    color:var(--main-color);
@@ -159,7 +157,6 @@ a.active {
 }
 .features-part ul {
    width: 100%;
-   list-style: none;
    display: inherit;
    justify-content: space-around;
 
@@ -192,7 +189,6 @@ a.active {
    text-align: center;
 }
 .business-part ul {
-   list-style-type: none;
    display: flex;
    margin-top:50px;
 }
@@ -208,11 +204,6 @@ a.active {
    padding: 94px 0 94px 0;
 }
 
-/* убирает зазор делая картинки элементом:block
-    для our team и pattern list */
-    .card img {
-      display: block;
-      }
 .our-team h2 {
    font-weight: bold;
    font-size: 36px;
@@ -221,7 +212,6 @@ a.active {
    letter-spacing: inherit;
 }
 .our-team ul {
-   list-style-type: none;
    display: flex;
    margin-top:50px;
 }
@@ -268,7 +258,6 @@ a.active {
    letter-spacing: 0.03em;
 }
 .footer-part ul {
-   list-style-type: none;
    margin-top: 20px;
    justify-content: space-between;
 }
@@ -302,13 +291,16 @@ margin-bottom: 0;
    margin-left:280px;
    margin-bottom: 34px;
    display:flex;
-   list-style-type: none;
 }
 .filter-list li {
     margin-right:8px;
 }
 .filter-list li:last-child{
    margin-right:0;
+}
+.filter-list .filter-link-blue {
+   background-color: var(--special-color);
+   color: var(--main-color);
 }
 .filter-list button {
    padding: 6px 22px;
@@ -321,10 +313,8 @@ margin-bottom: 0;
    border-radius: 4px;
    color:var(--main-text-color);
 }
-.filter-list .filter-list-blue {
-   background-color: var(--special-color);
-   color: var(--main-color);
-}
+
+
 .filter-list button:hover,
 .filter-list button:focus {
    background: var(--special-color);
@@ -336,7 +326,6 @@ margin-bottom: 0;
 .pattern-list {
     margin-top:calc(-1* var(--basic-card-gap));
     margin-left:calc(-1* var(--basic-card-gap));
-   list-style-type: none;
    display:flex;
    flex-wrap: wrap;
   }
